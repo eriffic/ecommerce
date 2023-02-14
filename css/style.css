@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+/* Basic Styling */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Header */
+
+.priority  {
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} 
+
+
+#video-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}   
+
+/* Navigation Bar */
+
+.logo {
+  font-weight: 400;
+}
+.navbar {
+  position: fixed;
+  top: 0px; 
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #191919;
+  color: white;
+  z-index: 10;
+} 
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #f9f9f9 3px solid;
+}
+
+#center-heading {
+  text-align: center;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.btn.home {
+  margin: 10px;
+}
+
+/* Blog */
+
+.slideshow {
+  padding-bottom: 20px;
+}
+
+.blog {
+  margin: 0 17%;
+}
+
+.card-text-blog {
+  text-decoration: none;
+  color: black;
+}
+
+.card-text-blog a:visited {
+  color: black;
+}
+
+.card {
+  border: none;
+  text-align: center;
+}
+
+.card p {
+  text-align: left;
+}
+
+
+.carouselExampleIndicators {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+
+/* Box Form */
+
+.box-form {
+  padding: 30px;
+}
+.form-container {
+  height: 50%;
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1f 2fr;
+  grid-template-areas: 
+  "firstname lastname"
+  "email country";
+}
+
+.form-container input, select {
+  width: 80%;
+}
+
+.firstname {
+  grid-area: firstname;
+}
+
+.lastname {
+  grid-area: lastname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.country {
+  grid-area: country;
+}
+
+.conditions {
+  padding-top: 15px;
+}
+
+
+/* Drone Banners  */
+.drone.mavic3 {
+  background: url(../img/Mavic3/mavic3banner1.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.drone.air2s {
+  background: url(../img/Mavic2s/2sbanner-1.jpg) no-repeat center center/cover;
+  height: 50vh;
+}
+
+.drone .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+
+/* Support */
+
+.support-container a:visited, a:active {
+  color: cornflowerblue;
+}
+
+.support-container a:link {
+  text-decoration: none;
+}
+
+.support.support {
+  background: url(../img/support/supportbanner.jpg) no-repeat center center/cover;
+  height: 30vh;
+} 
+
+.drone.support h2 {
+  color: #191919;
+  font-weight: bolder;
+  
+}
+
+.support.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+
+.drone h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 55px;
+}
+
+.table td{
+  text-align: left;
+  padding: 5px 20px;
+  
+}
+
+/* Background */
+
+.bg-medium {
+  background-color: #3d3e3e;
+}
+
+.bglight {
+  background-color: #fff;
+  color: #3d3e3e;
+}
+
+.bgdark {
+  background-color: #3d3e3e;
+  color: #fff;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex columns */
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns p {
+  margin: 5px 0;
+}
+
+.flex-columns h3 {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 150px;
+}
+
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+
+
+/* Contact Support */
+
+
+.fa-solid,.fa-brands {
+  padding-top:30px;
+}
+
+.form-container {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 2;
+}
+
+
+.form-container input,
+.form-container textarea {
+  width: 95%;
+  padding: 10px;
+}
+
+.form-container textarea {
+  height: 200px;
+}
+
+/* Suppport */
+
+#support {
+  margin: 5%;
+}
+
+.support-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "quality quality"
+  "maintenance maintenance"
+  "onlineservice hotlineservice"
+  "northamerica northamerica"
+  "contact-form contact-form";
+
+}
+
+#contact {
+  grid-area: contact;
+}
+
+.support-container p {
+  color: #191919;
+}
+
+.bg-light {
+  background: #f9f9f9;
+}
+
+.quality {
+  grid-area: quality;
+}
+
+.maintenance {
+  grid-area: maintenance;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.onlineservice {
+  grid-area: onlineservice;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hotlineservice {
+  grid-area: hotlineservice;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hotlineservice ul {
+  list-style: none;
+}
+
+
+.northamerica {
+  grid-area: northamerica;
+  padding: 20px 0;
+}
+
+.northamerica h3 {
+  text-align: center;
+}
+
+.northamerica table {
+  width: 100%;
+ table-layout: fixed;
+ text-align: center;
+ padding: 0 10%;
+}
+
+.northamerica th,td {
+  word-wrap: break-word;
+}
+
+.contact-form {
+  grid-area: contact-form;
+}
+
+/* Mobile Queries */
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    margin: 0 3px;
+  }
+
+  .flex-columns .column {
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 2%;
+  }
+  
+}
+
+@media(max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+  }
+
+  
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0;
+  }
+
+   .blog {
+    margin-left: 8%;
+  } 
+
+  #table-responsive table, td {
+    font-size: 10px;
+  } 
+}
+
+#table-responsive table {
+ width: 100%;
+ table-layout: fixed;
+ text-align: center;
+ padding: 0 10%;
+}
+
+#table-responsive tr, td {
+  word-wrap: break-word;
+}
+
+
+
+/* Citations: 
+codes: 
+https://mdbootstrap.com/docs/standard/navigation/footer/
+https://getbootstrap.com/docs/5.2/components/carousel/
+https://www.w3schools.com/
+https://stackoverflow.com/questions/63261122/how-to-autoplay-video-without-sound
+https://stackoverflow.com/questions/26427829/something-like-table-layoutfixed-but-only-for-one-table-column
+
+video:
+https://www.youtube.com/watch?v=-X5LORYDRyc
+
+img:
+https://www.bestbuy.com/site/brands/dji/pcmcat748300478578.c?id=pcmcat748300478578
+https://www.dji.com/mini-3-pro?gclid=EAIaIQobChMI676cneee-AIVLCCtBh0PBwDUEAAYASAAEgJ5u_D_BwE
+https://i.shgcdn.com/17e213e0-57c9-43bf-af10-41936bbec85e/-/format/auto/-/preview/3000x3000/-/quality/lighter/
+https://www1.djicdn.com/cms/uploads/645ca2b749659ae6fe570c5895204ee9.jpg
+https://www.dji.com/altitude
+https://www1.djicdn.com/cms/uploads/8cf11d1bc1f0a8ceac63d3310e38a1dd.jpg
+https://unsplash.com/photos/J3ABLQjZQBg
+https://www.dji.com/support/repair
+https://enterprise-insights.dji.com/blog/tagging-whales-from-above-with-drones
+*/
+
